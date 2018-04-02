@@ -9,5 +9,6 @@ class Appointment
 
   def add_appointment
     doctor.appointments << self
+    appointment.doctor = self
   end
 end
