@@ -14,4 +14,8 @@ class Patient
     @appointments << appointment
     appointment.patient = self
   end
+
+  def doctors
+    @appoinments.collect { |appointment| appointment.doctor }
+  end
 end
